@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   root "pages#index"
 
   resources :articles
+
+  get "/users/sign_in", controller: "users", action: :sign_in
 end
