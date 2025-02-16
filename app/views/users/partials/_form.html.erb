@@ -1,0 +1,15 @@
+<%= form_with model: user do |f|  %>
+  <div class='user-form'>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+  <div>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <%= f.submit %>
+<% end %>
