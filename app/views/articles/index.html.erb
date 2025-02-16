@@ -1,5 +1,7 @@
 <h1 class="text-2xl text-center mb-[40px] font-bold">Articles</h1>
-
+<% if flash[:notice] %>
+  <div><%= flash[:notice] %></div>
+<% end %>
 <% @articles.each do |article| %>
   <div class="block border rounded p-[20px] text-center w-full max-w-[500px] mx-auto">
     <h4 class="text-lg font-medium"><%= article.title %></h4>
